@@ -21,8 +21,17 @@ class HomeWi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: Center(child: Text("Abraão Félix")),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home"),
+      ),
+      body: Center(child: Text("Abraão Félix")),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print("clicou");
+        },
+      ),
     );
   }
 }
